@@ -1,0 +1,50 @@
+
+.bg-img {
+    background-image: url("Bs5/images/girl4.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.play{
+    top: 30% !important;
+    left: 29% !important;
+}
+
+.footer-txt-color{
+    color: #a1abdfb3;
+}
+.bg-footer {
+    background-color: rgb(4 19 64 / 87%);
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.fh-400 {
+    height: 450px !important;
+}
+.hover:hover .image {
+    opacity: 0.5;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    
+}
+.ulimg {
+    list-style-image: url("Bs5/images/circle-check-solid.svg");
+    margin-left: 30px;
+    padding-left: 20px;
+    margin-bottom:1rem !important;
+}

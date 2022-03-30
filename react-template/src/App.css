@@ -1,0 +1,229 @@
+
+h1{
+  font-family: 'Inter', sans-serif;
+}
+.fontcolor{
+  color: rgba(194,198,221);
+  font-size: 16px;
+  font-weight: 400;
+ 
+}
+.bglineargradiant{
+  height: 70rem;
+  background-color: black;
+  background-image: repeating-linear-gradient(170deg, #4928aa 60%, #23202a 8%);
+}
+.lineargradiant{
+  background-image: linear-gradient(to right, #333139, #23202a);
+}
+.linearletsconnect{
+  background-image: linear-gradient(140deg,#23202A 60%,#1d1c24 8%);
+}
+.linearservice{
+  background-image: linear-gradient(120deg,#23202A 60%,#1d1c24 8%);
+}
+.ourservice{
+  background-color: rgba(119, 113, 113, 0.541);
+  border-radius: 1rem 1rem 1rem 0px;
+}
+.borderadious{
+  border-radius: 2rem;
+}
+.liststyleimg{
+  list-style-image: url('Component/images/check-solid.svg');
+ 
+}
+.hover :hover{
+  background-color:white;
+  color: rgba(46, 43, 43, 0.966);
+  border-radius: 2rem;
+  width: 50px;
+  height: 50px;
+}
+.hover {
+  background-color:#23202A;
+  color: white;
+  
+}
+.hover1{
+  background-color: white;
+  color: #23202A;
+}
+.hover1:hover{
+  background-color: rgb(35, 33, 42);
+  color: white;
+}
+.hoversvg :hover{
+  background-color: #1e1c22;
+  color: white;
+}
+.hoversvg{
+  background-color: rgb(35, 33, 42);
+}
+.bottom1{
+  bottom: -26%;
+}
+.end1{
+    right: 0;
+}
+.start1{
+  left: 0%;
+}
+.lgdevice{
+  width: 30.33%;
+}
+.borderadious1 ,.borderadious2{
+  border-radius: 1rem;
+}
+.imgwidth{
+  width: 90%;
+  
+}
+.wbutton{
+  width: 200px;
+}
+.height1{
+  height: 400px;
+}
+.objectfit{
+  object-fit: cover;
+}
+.hover2{
+  width: 60px;
+  height: 60px;
+  border-radius: 2rem;
+  background-color: rgb(56, 54, 54);
+  opacity: .75;
+  z-index: 10;
+  
+}
+.hover2:hover{
+  width:150px;
+  transition: width 0.25s;
+}
+@media only screen and (max-width:992px) {
+  .bottom1{
+    bottom: -100% !important;
+  }
+  .end1{
+    left: 0 !important;
+  }
+  .lgdevice{
+    width: 100%;
+  }
+  .borderadious1{
+    border-radius: 1rem 1rem 0 0 ;
+  }
+  .borderadious2{
+    border-radius: 0 0 1rem 1rem;
+  }
+  .imgwidth{
+    width: 100%;
+  }
+  .height1{
+    height: 300px;
+  }
+  .start1{
+    left: 0;
+  }
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  padding: 10px ;
+}
+.item1, .item2, .item3, .item4, .item5{
+  display: grid;
+  background-color:#23202A;
+  border-radius: 2rem;
+}
+.item1{
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+@media only screen and (max-width:1200px) {
+  .item1{
+    grid-area: 1 / 1 / span 2 / span 2;
+  }
+  .item2{
+    grid-area: 1 / 3 / span 1 / span 2;
+  }
+  .item3{
+    grid-area: 2 / 3 / span 1 / span 2;
+  }
+  .item4{
+    grid-area: 3 / 1 /span 2 /span 2;
+  }
+  .item5{
+    grid-area: 3 / 3 /span 1 /span 2;
+  } 
+}
+@media  only screen  and (max-width: 992px) {
+  .item1{
+    grid-area: 1 / 1 / span 1/span 4;
+  }
+  .item2{
+    grid-area: 2 / 1 / span 1/ span 4;
+  }
+  .item3{
+    grid-area:3 / 1 / span 1 / span 4;
+  }
+  .item4{
+    grid-area:4 / 1 / span 1 / span 4;
+  }
+  .item5{
+    grid-area:5 / 1 / span 1 / span 4;
+  }
+}
+.grid-container2{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 30px;
+  padding: 10px ;
+  
+}
+.amazon,.adobe,.amazon1,.amazon2,.shopify,.upwork{
+  display: grid;
+}
+@media only screen and (max-width:768px) {
+  .amazon,.adobe,.amazon1,.amazon2,.shopify,.upwork{
+   grid-column-start: 1;
+   grid-column-end: 3;
+  
+ }
+
+}
+
+.bglineartrapezoid{
+    border-left: 50px solid #555;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    height: 125px;
+
+}
+.grid-container-about{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:55px;
+  padding: 20px;
+}
+.about1{
+  display: grid;
+}
+@media only screen and (max-width:992px) {
+  .about1,.about2,.about3{
+    grid-column-start:1;
+    grid-column-end: 3;
+  }
+  .grid-container-about{
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  
+}
+.backgroundlinear{
+  background:linear-gradient(185deg, #f69d3c 20%, #ebf8e1 10%, #f69d3c );
+}

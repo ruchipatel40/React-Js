@@ -13,16 +13,16 @@ function Footer() {
                 <div className='col-lg-3 col-md-6 col-12 pb-3 pb-md-0'>
                     <h5>Get in touch</h5>
                     <p className='fontcolor'>123 West Kanye Street Los Angeles, CA 90001</p>
-                    <p className='fontcolor'>(123) 456-789
-                    hello@crator.com</p>
+                    <p className='fontcolor'>(123) 456-789</p>
+                    <p className='fontcolor'> hello@crator.com</p>
                 </div>
                 <div className='col-lg-3 col-md-6 col-12 pb-3 pb-md-0'>
                    <h5>Company</h5>
                    <ul className='list-unstyled fontcolor'>
-                       <li>Home</li>
+                       <li >Home</li>
                        <li>About</li>
                        <li>Services</li>
-                       <li>Work</li>
+                       <li>Works</li>
                        <li>Contact us</li>
                    </ul>
                 </div>

@@ -1,8 +1,5 @@
 import React from 'react'
 import hgroup1 from '../images/hgroup1.jpeg'
-import shopify from '../images/shopify.svg'
-import amazon from '../images/amazon.svg'
-import adobe from '../images/adobe.svg'
 import { BsCircleSquare } from 'react-icons/bs'
 import { BiCodeAlt } from 'react-icons/bi'
 import { AiTwotoneSetting } from 'react-icons/ai'
@@ -13,44 +10,43 @@ import hgroup6 from '../images/hgroup6.jpg'
 import hgroup7 from '../images/hgroup7.jpg'
 import hgroup8 from '../images/hgroup8.jpg'
 import hgroup9 from '../images/hgroup9.jpg'
-
-import Ourservice from '../Service/Ourservice'
-import Letsconnect from '../Service/Letsconnect'
-import Footer from '../Service/Footer'
-import Navbar from '../Service/Navbar'
-import Testimonial from './Testimonial'
+import Ourservice from '../Components/Ourservice'
+import Letsconnect from '../Components/Letsconnect'
+import Testimonial from '../Components/Testimonial'
 
 
 function Home() {
   return (
       <>
-     
-    <section className='container-fluid'>
-        <div className=' borderadious mb-5 text-center text-md-start linearservice px-md-5 px-2' style={{ maxHeight:'800px'}}>
-        <div className='row p-md-5 p-2'>
+ 
+    <section className='container-fluid pb-md-5 pb-2 mb-md-5 mb-0'>
+        <div className=' borderadious mb-5 text-center text-md-start linearservice p-lg-5 p-2' style={{ maxHeight:'800px'}}>
+        <div className='row p-lg-5 p-2'>
             <div className='col-12 col-md-6 py-5'> 
                 <p className='px-4 d-inline py-2 ourservice mb-5' style={{backgroundColor:'#1A1921'}}>Welcome</p>
                 <h1 className='mt-4 fw-bold display-4 mb-md-4 mb-2'>Let’s make your product a success</h1>
                 <p className='fs-5 mb-4'>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                {/* <button className='btn px-4 py-3 rounded-pill hover1 me-3 wbutton'>Let's get started</button>
-                <button className='btn btn-light py-3 rounded-pill mt-md-0 mt-2 hover1 wbutton'>Learn more</button> */}
-                <a className='btn px-4 py-3 rounded-pill hover1 me-3  fs-5'>Let's get started</a>
-                <a className='text-center text-decoration-none align-items-center d-inline-flex' style={{width:'auto',heigth:'3.5rem',position:'relative',padding:'0px 2rem',fontWeight:'500'}}>
-                      <span className='opacity-75 left-0 top-0 position-absolute hover2 ' style={{backgroundColor:'#0000008f'}}>
-                      </span>
-                      <span className='postion-relative ps-4 pt-3 fontcolor' style={{zIndex:'20'}}>
-                      Learn more
-                      </span>
-                  </a>
+                <div className='row d-flex align-items-center justify-content-md-start justify-content-center'>
+                    <div className='col-xl-4 col-md-6 col-10 pb-md-0 pb-5'>
+                        <a className='btn w-100 py-3 rounded-pill hover1 me-3 '>Let's get started</a>
+                    </div>
+                    <div className='col-md-6 col-10'>
+                        <a href="#" class="circletorec" style={{color:'white'}}>
+                            <span className='span'>Learn more</span>
+                        </a>
+                    </div>
+                </div>
+                
+               
             </div>
-            <div className='col-12 col-md-6 p-sm-5 px-3 pb-5'>
+            <div className='col-12 col-md-6 p-lg-5 px-3 pb-5'>
                 <img src={hgroup1} className='w-100 borderadious h-100 objectfit'/>
             </div>
         </div>
         </div>
 
         <div className='text-center py-5'>
-            <div className='row d-flex justify-content-center'>
+            <div className='row d-flex justify-content-center pt-md-5 pt-2'>
                 <div className='col-md-7 col-12'>
                     <p className='px-4 d-inline py-2 ourservice mb-5 lineargradiant '>Our partners</p>
                     <h1 className='display-5 fw-bold my-4'>Trusted by the best companies in the business</h1>
@@ -67,7 +63,7 @@ function Home() {
                 </div>
                 <div className="shopify hoversvg borderadious ">
                     <div className='borderadious' >
-                         <svg width="100px" height="150px" viewBox="0 0 115 33" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M24.8058 6.25011C24.7833 6.08619 24.6421 5.99585 24.5244 5.98503C24.4067 5.97421 22.1228 5.94013 22.1228 5.94013L20.0234 3.87357C19.8346 3.6826 19.466 3.74049 19.328 3.78377C19.3264 3.78485 18.9697 3.89629 18.3684 4.08455C18.2498 3.69061 18.096 3.30836 17.909 2.94254C17.2286 1.62957 16.2327 0.940898 15.0286 0.933324C14.9404 0.933324 14.8575 0.941439 14.774 0.948472L14.6654 0.821341C14.1354 0.25439 13.463 -0.0225938 12.6575 0.00175049C11.1031 0.0466521 9.55516 1.18218 8.29926 3.19896C7.4167 4.61796 6.74381 6.40159 6.5534 7.78109L3.49279 8.74134C2.59151 9.02806 2.56316 9.05511 2.44549 9.91527L0 29.0023L19.7586 32.4591L28.3167 30.306L24.8004 6.25065L24.8058 6.25011ZM17.373 4.39291L15.8395 4.87277C15.8277 4.07644 15.7347 2.9685 15.3677 2.01205C16.5477 2.23818 17.1275 3.58793 17.3736 4.39237L17.373 4.39291ZM14.8056 5.19682L11.507 6.23009C11.8257 4.99557 12.4302 3.76646 13.1726 2.96039C13.4486 2.66068 13.8348 2.32636 14.2926 2.13539C14.7227 3.04316 14.8168 4.328 14.8061 5.19736L14.8056 5.19682ZM12.6874 1.04747C13.0522 1.03936 13.3598 1.1205 13.6224 1.29524C13.202 1.51596 12.796 1.83298 12.4152 2.24629C11.4278 3.31744 10.6715 4.98096 10.3693 6.58606L7.66007 7.43432C8.19495 4.90793 10.2885 1.1178 12.688 1.04801L12.6874 1.04747Z" fill="currentColor"></path><path d="M24.525 5.98652C24.4084 5.97678 22.1234 5.94162 22.1234 5.94162L20.0251 3.87344C19.9545 3.80203 19.8646 3.76524 19.7598 3.75009L19.7608 32.4579L28.3227 30.3059L24.8064 6.25106C24.7839 6.08714 24.6416 5.9968 24.525 5.98598V5.98652Z" fill="currentColor"></path><path d="M15.013 10.4394L14.0181 14.2024C14.0181 14.2024 12.9088 13.6917 11.5935 13.7751C9.6647 13.8984 9.64437 15.1286 9.66416 15.4375C9.769 17.12 14.1465 17.4932 14.3925 21.4305C14.5851 24.532 12.7665 26.6537 10.144 26.8209C6.9967 27.021 5.26367 25.1438 5.26367 25.1438L5.93067 22.275C5.93067 22.275 7.67439 23.6058 9.07044 23.5171C9.98242 23.4587 10.3082 22.7083 10.275 22.1782C10.1381 19.9828 6.5736 20.1116 6.34788 16.5049C6.158 13.4699 8.12904 10.3928 12.4787 10.1213C14.1545 10.0131 15.0119 10.4448 15.0119 10.4448L15.013 10.4394Z" fill="#121212"></path><path d="M39.5994 18.3199C38.6152 17.7789 38.1087 17.3245 38.1087 16.698C38.1087 15.9011 38.8115 15.3888 39.9096 15.3888C41.1934 15.3888 42.3284 15.9298 42.3284 15.9298L43.2281 13.1416C43.2281 13.1416 42.4006 12.4924 39.9653 12.4924C36.5757 12.4924 34.227 14.4562 34.227 17.2152C34.227 18.7802 35.3235 19.9753 36.787 20.8279C37.9637 21.5095 38.3906 21.9942 38.3906 22.7051C38.3906 23.4446 37.7995 24.0424 36.703 24.0424C35.0684 24.0424 33.5247 23.1887 33.5247 23.1887L32.5684 25.9775C32.5684 25.9775 33.9944 26.9448 36.3938 26.9448C39.8824 26.9448 42.3856 25.2093 42.3856 22.0797C42.3845 20.4027 41.119 19.2125 39.6042 18.3253L39.5994 18.3199ZM53.4957 12.4589C51.7798 12.4589 50.4292 13.2844 49.3888 14.5362L49.3321 14.5076L50.8229 6.62705H46.9423L43.173 26.6846H47.0552L48.3496 19.8287C48.8556 17.2395 50.1778 15.6469 51.4155 15.6469C52.2874 15.6469 52.6254 16.2441 52.6254 17.0983C52.6254 17.6393 52.5687 18.2885 52.4569 18.8338L50.9946 26.6856H54.8768L56.3958 18.5774C56.5648 17.7237 56.6777 16.7002 56.6777 16.0169C56.6761 13.7972 55.5224 12.4605 53.4978 12.4605L53.4957 12.4589ZM65.4503 12.4589C60.7808 12.4589 57.687 16.7326 57.687 21.477C57.687 24.5212 59.5431 26.968 63.0316 26.968C67.6166 26.968 70.7109 22.8149 70.7109 17.9498C70.7109 15.1335 69.0795 12.4589 65.4503 12.4589V12.4589ZM63.5376 23.9531C62.2154 23.9531 61.6527 22.8154 61.6527 21.3927C61.6527 19.1454 62.8064 15.4754 64.9155 15.4754C66.2938 15.4754 66.7432 16.6655 66.7432 17.8368C66.7432 20.255 65.591 23.9531 63.5371 23.9531H63.5376ZM80.6405 12.4589C78.0196 12.4589 76.5326 14.7921 76.5326 14.7921H76.477L76.7016 12.6823H73.2698L72.4825 17.8887L69.7813 32.2556H73.6635L74.7316 26.4519H74.8172C74.8172 26.4519 75.6195 26.9637 77.0958 26.9637C81.653 26.9637 84.6339 22.2409 84.6339 17.4613C84.6339 14.8105 83.4802 12.4551 80.6394 12.4551L80.6405 12.4589ZM76.9273 24.0089C75.9196 24.0089 75.3227 23.4397 75.3227 23.4397L75.9645 19.7697C76.4149 17.3234 77.6805 15.7015 79.031 15.7015C80.2078 15.7015 80.5779 16.8105 80.5779 17.8638C80.5779 20.3956 79.0872 24.0094 76.9215 24.0094L76.9273 24.0089ZM90.1818 6.82559C88.9446 6.82559 87.9599 7.821 87.9599 9.10151C87.9599 10.2679 88.691 11.0653 89.7881 11.0653H89.8442C91.0542 11.0653 92.0945 10.2397 92.1228 8.78936C92.1228 7.65113 91.3633 6.82559 90.1812 6.82559H90.1818ZM84.7473 26.6835H88.6285L91.2735 12.7721H87.3688L84.7479 26.6835H84.7473ZM101.147 12.7434H98.4457L98.5859 12.0942C98.8105 10.7569 99.5989 9.56243 100.893 9.56243C101.588 9.56243 102.13 9.76151 102.13 9.76151L102.89 6.68872C102.89 6.68872 102.215 6.3479 100.779 6.3479C99.401 6.3479 98.0237 6.74606 96.9817 7.65708C95.6595 8.79531 95.0401 10.4448 94.7315 12.0953L94.6245 12.7445H92.8235L92.2608 15.7037H94.0618L92.0078 26.6856H95.89L97.944 15.7037H100.616L101.151 12.7445L101.147 12.7434ZM110.486 12.7726C110.486 12.7726 108.059 18.9561 106.97 22.3318H106.913C106.839 21.2498 105.957 12.7726 105.957 12.7726H101.878L104.213 25.5398C104.27 25.8239 104.242 25.9953 104.129 26.189C103.678 27.0708 102.919 27.9245 102.019 28.5504C101.288 29.0914 100.472 29.4322 99.8257 29.6594L100.894 33C101.682 32.8296 103.313 32.1745 104.692 30.8664C106.465 29.1882 108.096 26.5926 109.783 23.0762L114.537 12.7769H110.487V12.778L110.486 12.7726Z" fill="currentColor"></path></svg>
+                         <svg width="100px" height="150px" viewBox="0 0 115 33" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M24.8058 6.25011C24.7833 6.08619 24.6421 5.99585 24.5244 5.98503C24.4067 5.97421 22.1228 5.94013 22.1228 5.94013L20.0234 3.87357C19.8346 3.6826 19.466 3.74049 19.328 3.78377C19.3264 3.78485 18.9697 3.89629 18.3684 4.08455C18.2498 3.69061 18.096 3.30836 17.909 2.94254C17.2286 1.62957 16.2327 0.940898 15.0286 0.933324C14.9404 0.933324 14.8575 0.941439 14.774 0.948472L14.6654 0.821341C14.1354 0.25439 13.463 -0.0225938 12.6575 0.00175049C11.1031 0.0466521 9.55516 1.18218 8.29926 3.19896C7.4167 4.61796 6.74381 6.40159 6.5534 7.78109L3.49279 8.74134C2.59151 9.02806 2.56316 9.05511 2.44549 9.91527L0 29.0023L19.7586 32.4591L28.3167 30.306L24.8004 6.25065L24.8058 6.25011ZM17.373 4.39291L15.8395 4.87277C15.8277 4.07644 15.7347 2.9685 15.3677 2.01205C16.5477 2.23818 17.1275 3.58793 17.3736 4.39237L17.373 4.39291ZM14.8056 5.19682L11.507 6.23009C11.8257 4.99557 12.4302 3.76646 13.1726 2.96039C13.4486 2.66068 13.8348 2.32636 14.2926 2.13539C14.7227 3.04316 14.8168 4.328 14.8061 5.19736L14.8056 5.19682ZM12.6874 1.04747C13.0522 1.03936 13.3598 1.1205 13.6224 1.29524C13.202 1.51596 12.796 1.83298 12.4152 2.24629C11.4278 3.31744 10.6715 4.98096 10.3693 6.58606L7.66007 7.43432C8.19495 4.90793 10.2885 1.1178 12.688 1.04801L12.6874 1.04747Z" fill="currentColor"></path><path d="M24.525 5.98652C24.4084 5.97678 22.1234 5.94162 22.1234 5.94162L20.0251 3.87344C19.9545 3.80203 19.8646 3.76524 19.7598 3.75009L19.7608 32.4579L28.3227 30.3059L24.8064 6.25106C24.7839 6.08714 24.6416 5.9968 24.525 5.98598V5.98652Z" fill="currentColor"></path><path d="M15.013 10.4394L14.0181 14.2024C14.0181 14.2024 12.9088 13.6917 11.5935 13.7751C9.6647 13.8984 9.64437 15.1286 9.66416 15.4375C9.769 17.12 14.1465 17.4932 14.3925 21.4305C14.5851 24.532 12.7665 26.6537 10.144 26.8209C6.9967 27.021 5.26367 25.1438 5.26367 25.1438L5.93067 22.275C5.93067 22.275 7.67439 23.6058 9.07044 23.5171C9.98242 23.4587 10.3082 22.7083 10.275 22.1782C10.1381 19.9828 6.5736 20.1116 6.34788 16.5049C6.158 13.4699 8.12904 10.3928 12.4787 10.1213C14.1545 10.0131 15.0119 10.4448 15.0119 10.4448L15.013 10.4394Z" fill="#121212"></path><path d="M39.5994 18.3199C38.6152 17.7789 38.1087 17.3245 38.1087 16.698C38.1087 15.9011 38.8115 15.3888 39.9096 15.3888C41.1934 15.3888 42.3284 15.9298 42.3284 15.9298L43.2281 13.1416C43.2281 13.1416 42.4006 12.4924 39.9653 12.4924C36.5757 12.4924 34.227 14.4562 34.227 17.2152C34.227 18.7802 35.3235 19.9753 36.787 20.8279C37.9637 21.5095 38.3906 21.9942 38.3906 22.7051C38.3906 23.4446 37.7995 24.0424 36.703 24.0424C35.0684 24.0424 33.5247 23.1887 33.5247 23.1887L32.5684 25.9775C32.5684 25.9775 33.9944 26.9448 36.3938 26.9448C39.8824 26.9448 42.3856 25.2093 42.3856 22.0797C42.3845 20.4027 41.119 19.2125 39.6042 18.3253L39.5994 18.3199ZM53.4957 12.4589C51.7798 12.4589 50.4292 13.2844 49.3888 14.5362L49.3321 14.5076L50.8229 6.62705H46.9423L43.173 26.6846H47.0552L48.3496 19.8287C48.8556 17.2395 50.1778 15.6469 51.4155 15.6469C52.2874 15.6469 52.6254 16.2441 52.6254 17.0983C52.6254 17.6393 52.5687 18.2885 52.4569 18.8338L50.9946 26.6856H54.8768L56.3958 18.5774C56.5648 17.7237 56.6777 16.7002 56.6777 16.0169C56.6761 13.7972 55.5224 12.4605 53.4978 12.4605L53.4957 12.4589ZM65.4503 12.4589C60.7808 12.4589 57.687 16.7326 57.687 21.477C57.687 24.5212 59.5431 26.968 63.0316 26.968C67.6166 26.968 70.7109 22.8149 70.7109 17.9498C70.7109 15.1335 69.0795 12.4589 65.4503 12.4589V12.4589ZM63.5376 23.9531C62.2154 23.9531 61.6527 22.8154 61.6527 21.3927C61.6527 19.1454 62.8064 15.4754 64.9155 15.4754C66.2938 15.4754 66.7432 16.6655 66.7432 17.8368C66.7432 20.255 65.591 23.9531 63.5371 23.9531H63.5376ZM80.6405 12.4589C78.0196 12.4589 76.5326 14.7921 76.5326 14.7921H76.477L76.7016 12.6823H73.2698L72.4825 17.8887L69.7813 32.2556H73.6635L74.7316 26.4519H74.8172C74.8172 26.4519 75.6195 26.9637 77.0958 26.9637C81.653 26.9637 84.6339 22.2409 84.6339 17.4613C84.6339 14.8105 83.4802 12.4551 80.6394 12.4551L80.6405 12.4589ZM76.9273 24.0089C75.9196 24.0089 75.3227 23.4397 75.3227 23.4397L75.9645 19.7697C76.4149 17.3234 77.6805 15.7015 79.031 15.7015C80.2078 15.7015 80.5779 16.8105 80.5779 17.8638C80.5779 20.3956 79.0872 24.0094 76.9215 24.0094L76.9273 24.0089ZM90.1818 6.82559C88.9446 6.82559 87.9599 7.821 87.9599 9.10151C87.9599 10.2679 88.691 11.0653 89.7881 11.0653H89.8442C91.0542 11.0653 92.0945 10.2397 92.1228 8.78936C92.1228 7.65113 91.3633 6.82559 90.1812 6.82559H90.1818ZM84.7473 26.6835H88.6285L91.2735 12.7721H87.3688L84.7479 26.6835H84.7473ZM101.147 12.7434H98.4457L98.5859 12.0942C98.8105 10.7569 99.5989 9.56243 100.893 9.56243C101.588 9.56243 102.13 9.76151 102.13 9.76151L102.89 6.68872C102.89 6.68872 102.215 6.3479 100.779 6.3479C99.401 6.3479 98.0237 6.74606 96.9817 7.65708C95.6595 8.79531 95.0401 10.4448 94.7315 12.0953L94.6245 12.7445H92.8235L92.2608 15.7037H94.0618L92.0078 26.6856H95.89L97.944 15.7037H100.616L101.151 12.7445L101.147 12.7434ZM110.486 12.7726C110.486 12.7726 108.059 18.9561 106.97 22.3318H106.913C106.839 21.2498 105.957 12.7726 105.957 12.7726H101.878L104.213 25.5398C104.27 25.8239 104.242 25.9953 104.129 26.189C103.678 27.0708 102.919 27.9245 102.019 28.5504C101.288 29.0914 100.472 29.4322 99.8257 29.6594L100.894 33C101.682 32.8296 103.313 32.1745 104.692 30.8664C106.465 29.1882 108.096 26.5926 109.783 23.0762L114.537 12.7769H110.487V12.778L110.486 12.7726Z" fill="currentColor"></path></svg>
                     </div>
                 </div>
                 <div className="amazon hoversvg borderadious">
@@ -97,7 +93,7 @@ function Home() {
             </div>
         </div>
     </section>
-    <section>
+    <section className='py-5'>
     <div className='py-md-5 py-3 container text-md-start text-center'>
             <p className='px-4 d-inline-block py-2 ourservice mb-5 lineargradiant'>What we do</p>
             <div className='row mb-md-5 mb-2'>
@@ -179,7 +175,7 @@ function Home() {
         </div>
     </section>
     <Ourservice />
-    <section className='container py-5 '>
+    <section className='container py-md-5 py-2'>
         <div className='row'>
             <div className='col-md-7 col-12 mx-auto'>
                 <div className='text-center'>
@@ -191,20 +187,22 @@ function Home() {
         <div className='py-5'>
             <div className='position-relative' >
                 <div className='position-relative pe-lg-5 pe-0' style={{backgroundSize:'cover ',backgroundPosition:'50%'}}>
-                    <img src={hgroup6} className='borderadious1 imgwidth objectfit' style={{maxHeight:'600px'}}/>
+                    <img src={hgroup6} className='borderadious1 imgwidth objectfit' style={{maxHeight:'590px'}}/>
                 </div>
-                <div className='position-absolute h-100 lgdevice end1 bottom1' style={{maxHeight:'600px'}}>
+                <div className='position-absolute h-100 lgdevice end1 bottom1' style={{maxHeight:'590px'}}>
                 <div className='p-md-5 p-3 borderadious2' style={{  backgroundColor:'#23202A'}}>
                     <div className='flex-column d-flex justify-content-between height1'>
                         <div>
-                            <p className='px-4 d-inline py-2 ourservice mb-5'>Ecommerce</p>
+                            <p className='px-4 d-inline py-2 mb-5 ourservice' style={{backgroundColor:'#1A1921' }}>Ecommerce</p>
                         </div>
-                        <div >
+                        <div className='heigth1'>
                             <h1>Nedia</h1>
                             <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget sed, convallis at tellus.</p>
                         </div>
-                        <div >
-                            <button className='btn btn-light px-4 py-3 rounded-pill'>Case study</button>
+                        <div className='pb-md-0 pb-3'>
+                            <a href="#" class="circletorec" style={{color:'white'}}>
+                                <span className='span' >Case study</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -218,21 +216,23 @@ function Home() {
         <div className='py-md-2 py-5'>
             <div className='position-relative' >
                     <div className='h-75 position-relative ps-lg-5 ms-lg-5 img-fluid' style={{backgroundSize:'cover ',backgroundPosition:'50%'}}>
-                        <img src={hgroup7} className='borderadious1 objectfit imgwidth'  style={{maxHeight:'600px'}}/>
+                        <img src={hgroup7} className='borderadious1 objectfit imgwidth'  style={{maxHeight:'590px'}}/>
                     </div>
-                    <div className='position-absolute h-100 lgdevice start1 bottom1' style={{maxHeight:'600px'}}>
+                    <div className='position-absolute h-100 lgdevice start1 bottom1' style={{maxHeight:'590px'}}>
                     <div className='p-md-5 p-3 borderadious1 ' style={{backgroundColor:'#23202A'}}>
                         <div className='flex-column d-flex justify-content-between height1' >
-                            <div className=''>
-                                <p className='px-4 d-inline py-2 ourservice mb-5'>App</p>
+                            <div className='pb-md-5 pb-2'>
+                                <p className='px-4 d-inline py-2 ourservice mb-5' style={{backgroundColor:'#1A1921'}}>App</p>
                             </div>
-                            <div className=''>
+                            <div>
                                 <h1>Sigma</h1>
                                 <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget sed, convallis at tellus.</p>
                             </div>
-                            <div className=''>
-                                <button className='btn btn-light px-4 py-3 rounded-pill'>Case study</button>
-                            </div>
+                                <div className='pb-md-0 pb-3'>
+                                    <a href="#" class="circletorec" style={{color:'white'}}>
+                                        <span className='span'>Case study</span>
+                                    </a>
+                                </div>
                         </div>
                     </div>
                     </div>
@@ -244,20 +244,22 @@ function Home() {
         <div className='py-5'>
             <div className='position-relative' >
                 <div className='position-relative pe-lg-5 pe-0' style={{backgroundSize:'cover ',backgroundPosition:'50%'}}>
-                    <img src={hgroup8} className='borderadious1 imgwidth objectfit' style={{maxHeight:'600px'}}/>
+                    <img src={hgroup8} className='borderadious1 imgwidth objectfit' style={{maxHeight:'590px'}}/>
                 </div>
-                <div className='position-absolute h-100 lgdevice end1 bottom1' style={{maxHeight:'600px'}}>
+                <div className='position-absolute h-100 lgdevice end1 bottom1' style={{maxHeight:'590px'}}>
                 <div className='p-md-5 p-3 borderadious2' style={{  backgroundColor:'#23202A'}}>
                     <div className='flex-column d-flex justify-content-between height1'>
                         <div>
-                            <p className='px-4 d-inline py-2 ourservice mb-5'>Sass</p>
+                            <p className='px-4 d-inline py-2 ourservice mb-5' style={{backgroundColor:'#1A1921'}}>Sass</p>
                         </div>
-                        <div >
+                        <div>
                             <h1>Sastastic</h1>
                             <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget sed, convallis at tellus.</p>
                         </div>
-                        <div >
-                            <button className='btn btn-light px-4 py-3 rounded-pill'>Case study</button>
+                        <div className='pb-md-0 pb-3'>
+                            <a href="#" class="circletorec" style={{color:'white'}}>
+                                <span className='span'>Case study</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -271,20 +273,22 @@ function Home() {
         <div className='py-md-2 py-5'>
             <div className='position-relative' >
                     <div className='h-75 position-relative ps-lg-5 ms-lg-5 img-fluid' style={{backgroundSize:'cover ',backgroundPosition:'50%'}}>
-                        <img src={hgroup9} className='borderadious1 objectfit imgwidth'  style={{maxHeight:'600px'}}/>
+                        <img src={hgroup9} className='borderadious1 objectfit imgwidth'  style={{maxHeight:'590px'}}/>
                     </div>
-                    <div className='position-absolute h-100 lgdevice start1 bottom1' style={{maxHeight:'600px'}}>
+                    <div className='position-absolute h-100 lgdevice start1 bottom1' style={{maxHeight:'590px'}}>
                     <div className='p-md-5 p-3 borderadious1 ' style={{backgroundColor:'#23202A'}}>
                         <div className='flex-column d-flex justify-content-between height1' >
-                            <div className=''>
-                                <p className='px-4 d-inline py-2 ourservice mb-5'>App</p>
+                            <div>
+                                <p className='px-4 d-inline py-2 ourservice mb-5' style={{backgroundColor:'#1A1921'}}>App</p>
                             </div>
-                            <div className=''>
+                            <div >
                                 <h1>Pantone</h1>
                                 <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget sed, convallis at tellus.</p>
                             </div>
-                            <div className=''>
-                                <button className='btn btn-light px-4 py-3 rounded-pill'>Case study</button>
+                            <div className='pb-md-0 pb-3'>
+                                <a href="#" class="circletorec" style={{color:'white'}}>
+                                    <span className='span'>Case study</span>
+                                </a>
                             </div>
                         </div>
                     </div>
